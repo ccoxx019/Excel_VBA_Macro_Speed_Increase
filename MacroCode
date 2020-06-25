@@ -1,0 +1,18 @@
+
+'performance boost START - turn off screen updating and calculations while code executes
+Application.ScreenUpdating = False
+Application.DisplayStatusBar = False
+Application.Calculation = False
+Application.EnableEvents = False
+ActiveSheet.DisplayPageBreaks = False
+
+
+'MACRO VBA GOES HERE
+
+
+'performance boost END - restore screen updating and calculations
+Application.ScreenUpdating = True
+Application.DisplayStatusBar = True
+Application.Calculation = True
+Application.EnableEvents = True
+ActiveSheet.DisplayPageBreaks = True
